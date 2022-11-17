@@ -11,3 +11,18 @@ for (int i = 0; i < wordsCount; i++)
     words[i] = Console.ReadLine();
 }
 
+Print(words);
+Console.WriteLine("Всего " + newWordsCount + " элементов, длина которых меньше или равна трём.");
+Console.WriteLine("Это: ");
+Print(newWords);
+
+void Print(string[] el)
+{
+    int count = el.Length;
+    int pos = 0;
+    while (pos<count)
+    {
+        Console.WriteLine(el[pos] + " ");
+        pos++;
+    }
+}
